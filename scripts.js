@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Botões de navegação
-    configurarNavegacao(document.getElementById("agendamento"), "Agendamento.html");
-    configurarNavegacao(document.getElementById("btnVoltar"), "TelaMenu.html");
-    configurarNavegacao(document.getElementById("cadastro"), "Cadastro.html");
-    configurarNavegacao(document.getElementById("relatorio"), "Relatorio.html");
+    configurarNavegacao(document.getElementById("agendamento"), "agendamento.html");
+    configurarNavegacao(document.getElementById("btnVoltar"), "telaMenu.html");
+    configurarNavegacao(document.getElementById("cadastro"), "cadastro.html");
+    configurarNavegacao(document.getElementById("relatorio"), "relatorio.html");
     configurarNavegacao(document.getElementById("entrada_saida"), "entrada_saida.html");
     configurarNavegacao(document.getElementById("BtnSair"), "index.html");
 
