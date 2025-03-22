@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+
+<body data-page="agendamento">
+  <div class="container">
+    <h1 class="title-n1">Agendamento</h1>
+
+    <div class="flex">
+      <form id="formAgendamento" class="cadastro">
+        <label for="cliente">Cliente:</label>
+        <input type="text" name="cliente" id="cliente" required>
+        
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data" required>
+        
+        <label for="servico">Tipo de Serviço:</label>
+        <input type="text" name="servico" id="servico" required>
+        
+        <label for="funcionario">Funcionario:</label>
+        <input type="text" name="funcionario" id="funcionario" required>
+      </form>
+      
+      <div>
+        <h3 subtitle-n3>Tabela de Agendamento</h3>
+        <div class="tabela">
+          <table>
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Data</th>
+                <th>Serviço</th>
+                <th>Funcionário</th>
+              </tr>
+            </thead>
+            <tbody id="tabelaAgendamentos">
+              <!-- Os registros de agendamentos irão aqui -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="agendar-limpar">
+      <button id="btnLimpar" type="button" class="btn">Limpar</button>
+      <button id="btnAgendar" type="button" class="btn">Agendar</button>
+    </div>
+
+    <div class="retorno-menu">
+      <button id="btnVoltar" class="btn">Retorne ao Menu</button>
+    </div>
+  </div>
+</body>
+
+</html>

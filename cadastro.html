@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Clientes e Funcionarios</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title-n1">Cadastro de Clientes<br> e Funcionarios</h1>
+
+    <form id="formCadastro" class="cadastro">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required>
+
+      <label for="contato">Contato:</label>
+      <input type="text" name="contato" id="contato" required>
+
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" required>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereco" id="endereco" required>
+
+      <label for="cep">CEP:</label>
+      <input type="text" name="cep" id="cep" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" name="cidade" id="cidade" required>
+
+      <label for="funcionario">
+        <input type="checkbox" id="sfuncionario" name="funcionario" value="sim">
+        Cadastro de Funcionário
+      </label>
+    </form>
+
+    <div class="cadastrar-limpar">
+      <button id="btnLimpar" type="button" class="btn">Limpar</button>
+      <button id="btnCadastrar" type="button" class="btn">Cadastrar</button>
+    </div>
+
+    <div class="retorno-menu">
+      <button id="btnVoltar" type="button">Retorne ao Menu</button>
+    </div>
+  </div>
+  
+
+  <script src="scripts.js" defer></script>
+</body>
+
+</html>
