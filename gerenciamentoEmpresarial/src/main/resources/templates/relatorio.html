@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relatorio</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <body data-page="Relatorio">
+        <div class="container">
+          <h1 class="title-n1">Relatório e fechamento</h1>
+
+          <div>
+            <h3 subtitle-n3>Tabela de Relatórios</h3>
+            <div class="tabela">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Cliente</th>
+                    <th>Data</th>
+                    <th>Serviço</th>
+                    <th>Funcionário</th>
+                  </tr>
+                </thead>
+                <tbody id="tabelaRelatorios">
+                  <!-- Os registros de agendamentos irão aqui -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="formFlex">
+            <form id="formAgendamento" class="cadastro">
+              <label for="dataInicio">Data Inicio:</label>
+              <input type="dataInicio" name="dataInicio" id="dataInicio" required>
+
+              <label for="dataFim">Data Fim:</label>
+              <input type="dataFim" name="dataFim" id="dataFim" required>
+            </form>
+          </div>
+
+          <div class="Gerar">
+            <button id="btnGerar" type="button" class="btn">Gerar Relaório</button>
+            <button id="btnAgendar" type="button" class="btn">Fechamento Mensal</button>
+          </div>
+      
+          <div class="retorno-menu">
+            <button id="btnVoltar" class="btn">Retorne ao Menu</button>
+          </div>
+        </div>
+      </body>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>entrada_saida</title>
+
+    <link rel="stylesheet" href="styles.css">
+   
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-n1">Cadastro<br>Entrada e Saída</h1>
+    
+        <div class="dropdown">
+            <button id="dropButton" class="dropbtn">Adicione o Tipo:</button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <a href="javascript:void(0);" onclick="changeButtonText('Entrada')">Entrada</a>
+                <a href="javascript:void(0);" onclick="changeButtonText('Saida')">Saida</a>
+            </div>
+        </div>
+  
+      <form id="formCadastro" class="cadastro">
+        <label for="data">Data:</label>
+        <input type="text" name="Data" id="data" required>
+  
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" required>
+  
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" id="descricao" required></textarea>
+      </form>
+  
+      <div class="cadastrar-limpar">
+        <button id="btnLimpar" type="button" class="btn">Limpar</button>
+        <button id="btnCadastrar" type="button" class="btn">Cadastrar</button>
+      </div>
+  
+      <div class="retorno-menu">
+        <button id="btnVoltar" type="button">Retorne ao Menu</button>
+      </div>
+    </div>
+    
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
