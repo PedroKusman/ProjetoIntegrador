@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>agendamento</title>
+  <title>Agendamento</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+
 </head>
 
 <body data-page="agendamento">
@@ -19,19 +19,19 @@
         <input type="text" name="cliente" id="cliente" required>
         
         <label for="data">Data:</label>
-        <input type="date" name="data" id="data" required>
+        <input type="data" name="Data" id="data" required>
         
         <label for="servico">Tipo de Serviço:</label>
         <input type="text" name="servico" id="servico" required>
         
-        <label for="funcionario">Funcionario:</label>
+        <label for="funcionario">Funcionário:</label>
         <input type="text" name="funcionario" id="funcionario" required>
       </form>
       
       <div>
-        <h3 subtitle-n3>Tabela de Agendamento</h3>
+        <h3 class="subtitle-n3">Tabela de Agendamentos</h3>
         <div class="tabela">
-          <table>
+            <table id="agendamentotable">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -57,6 +57,8 @@
       <button id="btnVoltar" class="btn">Retorne ao Menu</button>
     </div>
   </div>
+    
+      <script src="scripts.js" defer></script>
 </body>
 
 </html>
